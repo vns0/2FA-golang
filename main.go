@@ -15,8 +15,6 @@ const (
 )
 
 func main() {
-	// Example secret from here:
-	// https://github.com/google/google-authenticator/wiki/Key-Uri-Format
 	secret := []byte{'n', '.', 'v', 't', 'o', 'r', 'u', 's', 'h', 'i', 'n', 0xDE, 0xAD, 0xBE, 0xEF}
 
 	secretBase32 := base32.StdEncoding.EncodeToString(secret)
